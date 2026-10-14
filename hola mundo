@@ -1,3 +1,13 @@
-print("hola mundo")
+print("el teu nom?")
+nom=input("Gabriel") 
+print(nom)
+
+num=1
+print("num")
+num=2.5
+print("num")
+num="ups"
+print("num")
+
+print("Hola nom")
 print("16")
-Input( )
