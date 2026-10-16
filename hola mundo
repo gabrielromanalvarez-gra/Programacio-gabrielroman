@@ -1,13 +1,20 @@
-print("el teu nom?")
-nom=input("Gabriel") 
-print(nom)
+nom=input("Com et dius?")
+edad=input("En quin any vas neixer?")
+ara=2026
+edad=int(edad)
+edat= ara - edad
+print("Hola", nom, "tens", edat, "anys")
+Variable1 = 57
+Variable2 = 4
+print(2 + int(Variable2))
 
+'''
 num=1
-print("num")
+print(num,",",type(num))
 num=2.5
-print("num")
-num="ups"
-print("num")
+print(num,",",type(num))
+num='ups'
+print(num",",type(num))
+'''
 
-print("Hola nom")
-print("16")
+'''
