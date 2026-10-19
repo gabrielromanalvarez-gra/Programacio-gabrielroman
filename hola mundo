@@ -17,4 +17,3 @@ num='ups'
 print(num",",type(num))
 '''
 
-'''

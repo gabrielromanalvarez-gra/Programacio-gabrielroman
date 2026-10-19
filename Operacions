@@ -1,1 +1,10 @@
+num1= int(input("Escriu el numero"))
+num2= int(input("Escriu el altre numero"))
 
+print("La suma es:", int(num1) + int(num2))
+print("La resta es:", int(num1) - int(num2), "o", int(num2) - int(num1))
+print("La multiplicacio es:", int(num1) * int(num2))
+print("La divisio es:", int(num1) / int(num2))
+print("La divisio entera es:", int(num1) // int(num2))
+print("El residu es:", int(num1) % int(num2))
+print("La potencia es:", int(num1) ** int(num2))
