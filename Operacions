@@ -8,3 +8,19 @@ print("La divisio es:", int(num1) / int(num2))
 print("La divisio entera es:", int(num1) // int(num2))
 print("El residu es:", int(num1) % int(num2))
 print("La potencia es:", int(num1) ** int(num2))
+
+#Intercanvi de variables
+print("La primera variable val:",n1)
+print("La segona variable val:",n2)
+aux=n1 #Variable auxiliar
+n1=n2
+n2=aux
+print("Ara la variable val:",n1)
+print("Ara la segona variable val:",n2)
+
+#Textos
+t1=input("Escriu un text: ")
+t2=input("Escriu un altre text: ")
+
+print("La concatenacio es:", t1 + t2)
+print("Multiplicacio de text:", t1 * 3)
