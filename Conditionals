@@ -1,1 +1,16 @@
+#Números
+num1= int(input("Escriu un numero: "))
+num2= int(input("Escriu un altre numero: "))
+
+#if (num1+num2 > 10): 
+    #print("La suma es major que 10")
+#else:
+    #print("La suma es menor o igual que 10")
+
+suma=num1+num2
+if (suma > 8):
+    print("La seva suma és més gran que 8 o més petita que 4")
+
+if (suma < 4):
+    print("La seva suma és més gran que 8 o més petita que 4")
 

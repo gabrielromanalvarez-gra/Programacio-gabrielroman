@@ -10,13 +10,15 @@ print("El residu es:", int(num1) % int(num2))
 print("La potencia es:", int(num1) ** int(num2))
 
 #Intercanvi de variables
-print("La primera variable val:",n1)
-print("La segona variable val:",n2)
-aux=n1 #Variable auxiliar
-n1=n2
-n2=aux
-print("Ara la variable val:",n1)
-print("Ara la segona variable val:",n2)
+print("El primer numero es:" + str(num1))
+print("El segon numero es:" + str(num2))
+
+#Variable auxiliar
+aux=num1
+num1=num2
+num2=aux
+print("Ara la variable val:",num1)
+print("Ara la segona variable val:",num2)
 
 #Textos
 t1=input("Escriu un text: ")
