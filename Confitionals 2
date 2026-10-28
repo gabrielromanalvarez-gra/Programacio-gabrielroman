@@ -1,1 +1,20 @@
+num1= int(input("Escriu un numero: "))
+num2= int(input("Escriu un altre numero: "))
 
+print("vols sumar, restar, multiplicar, dividir, elevar a la potencia, fer el modul o fer la divisio entera?")
+operacio=input("Escriu la operacio que vols fer: ")
+
+if operacio=="sumar":
+    print(num1+num2)
+elif operacio=="restar":
+    print(num1-num2)
+elif operacio=="multiplicar":
+    print(num1*num2)
+elif operacio=="dividir":
+    print(num1/num2)
+elif operacio=="elevar a la potencia":
+    print(num1**num2)
+elif operacio=="fer el modul":
+    print(num1%num2)
+elif operacio=="fer la divisio entera":
+    print(num1//num2)
