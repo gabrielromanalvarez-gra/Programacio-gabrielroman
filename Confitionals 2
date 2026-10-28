@@ -8,13 +8,18 @@ if operacio=="sumar":
     print(num1+num2)
 elif operacio=="restar":
     print(num1-num2)
+    print(num2-num1)
 elif operacio=="multiplicar":
     print(num1*num2)
 elif operacio=="dividir":
     print(num1/num2)
+    print(num2/num1)
 elif operacio=="elevar a la potencia":
     print(num1**num2)
+    print(num2**num1)
 elif operacio=="fer el modul":
     print(num1%num2)
+    print(num2%num1)
 elif operacio=="fer la divisio entera":
     print(num1//num2)
+    print(num2//num1)
