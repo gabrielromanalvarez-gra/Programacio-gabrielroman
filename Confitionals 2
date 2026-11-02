@@ -6,47 +6,75 @@ operacio=input("Escriu la operacio que vols fer: ")
 
 if operacio=="sumar":
     resultat=num1+num2
-    print(f"El resultat de la suma entre {num1} i {num2} és: {resultat}")
+    print("El resultat de la suma entre",num1,"i",num2,"és:",resultat)
 elif operacio=="restar":
     escollir=input("Vols restar num1-num2 o num2-num1? (1/2): ")
     if escollir=="1":
         resultat=num1-num2
-        print(f"El resultat de la resta entre {num1} i {num2} és: {resultat}")
+        print("El resultat de la resta entre",num1,"i",num2,"és:",resultat)
     else:
         resultat=num2-num1
-        print(f"El resultat de la resta entre {num2} i {num1} és: {resultat}")
+        print("El resultat de la resta entre",num2,"i",num1,"és:",resultat)
 elif operacio=="multiplicar":
     resultat=num1*num2
-    print(f"El resultat de la multiplicació entre {num1} i {num2} és: {resultat}")
-elif operacio=="dividir":
-    escollir=input("Vols dividir num1 entre num2 o num2 entre num1? (1/2): ")
-    if escollir=="1":
-        resultat=num1/num2
-        print(f"El resultat de la divisió entre {num1} i {num2} és: {resultat}")
-    else:
-        resultat=num2/num1
-        print(f"El resultat de la divisió entre {num2} i {num1} és: {resultat}")
-elif operacio=="elevar a la potencia":
-    escollir=input("Vols elevar num1 a num2 o num2 a num1? (1/2): ")
-    if escollir=="1":
-        resultat=num1**num2
-        print(f"El resultat de l'elevació entre {num1} i {num2} és: {resultat}")
-    else:
-        resultat=num2**num1
-        print(f"El resultat de l'elevació entre {num2} i {num1} és: {resultat}")
+    print("El resultat de la multiplicació entre",num1,"i",num2,"és:",resultat)
+elif operacio == "dividir":
+    escollir = input("Vols dividir num1 entre num2 o num2 entre num1? (1/2): ")
+    
+    if escollir == "1":
+        # num2 es el divisor
+        if num2 == 0:
+            print("ERROR: No es pot dividir entre 0")
+        elif num2 < 0:
+            print("ERROR: No es pot dividir entre un número negatiu")
+        else:
+            resultat = num1 / num2
+            print("El resultat de la divisió entre", num1, "i", num2, "és:", resultat)
+            
+    elif escollir == "2":
+        # num1 es el divisor
+        if num1 == 0:
+            print("ERROR: No es pot dividir entre 0")
+        elif num1 < 0:
+            print("ERROR: No es pot dividir entre un número negatiu")
+        else:
+            resultat = num2 / num1
+            print("El resultat de la divisió entre", num2, "i", num1, "és:", resultat)
+elif operacio == "elevar a la potencia":
+    escollir = input("Vols elevar num1 a num2 o num2 a num1? (1/2): ")
+    
+    if escollir == "1":
+        # num1 es la base y num2 es el exponent (potencia)
+        if num2 < 0:
+            print("ERROR: No es pot elevar a un exponent negatiu")
+        elif num1 == 0 and num2 == 0:
+            print("ERROR: 0 elevat a 0 és una indeterminació")
+        else:
+            resultat = num1 ** num2
+            print("El resultat de l'elevació entre", num1, "i", num2, "és:", resultat)
+            
+    elif escollir == "2":
+        # num2 es la base y num1 es el exponent (potencia)
+        if num1 < 0:
+            print("ERROR: No es pot elevar a un exponent negatiu")
+        elif num2 == 0 and num1 == 0:
+            print("ERROR: 0 elevat a 0 és una indeterminació")
+        else:
+            resultat = num2 ** num1
+            print("El resultat de l'elevació entre", num2, "i", num1, "és:", resultat)
 elif operacio=="fer el modul":
     escollir=input("Vols fer el modul de num1 entre num2 o num2 entre num1? (1/2): ")
     if escollir=="1":
         resultat=num1%num2
-        print(f"El resultat del mòdul entre {num1} i {num2} és: {resultat}")
+        print("El resultat del mòdul entre",num1,"i",num2,"és:",resultat)
     else:
         resultat=num2%num1
-        print(f"El resultat del mòdul entre {num2} i {num1} és: {resultat}")
+        print("El resultat del mòdul entre",num2,"i",num1,"és:",resultat)
 elif operacio=="fer la divisio entera":
     escollir=input("Vols fer la divisio entera de num1 entre num2 o num2 entre num1? (1/2): ")
     if escollir=="1":
         resultat=num1//num2
-        print(f"El resultat de la divisió entera entre {num1} i {num2} és: {resultat}")
+        print("El resultat de la divisió entera entre",num1,"i",num2,"és:",resultat)
     else:
         resultat=num2//num1
-        print(f"El resultat de la divisió entera de {num2} entre {num1} és: {resultat}")
+        print("El resultat de la divisió entera de",num2,"entre",num1,"és:",resultat)
