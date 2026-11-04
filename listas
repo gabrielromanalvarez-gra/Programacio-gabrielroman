@@ -1,1 +1,17 @@
+llista = [2, "Hola", 3.5]
+print(llista[0])  # Imprimeix el primer element de la llista
+print(llista[1])  # Imprimeix el segon element de la llista
+print(llista[2])  # Imprimeix el tercer element de la llista
 
+matriu = [[1, 1, 1], [2, 2, 2]]
+
+print(len(llista))  # Imprimeix la longitud de la llista
+print(len(matriu))  # Imprimeix la longitud de la matriu
+
+#Parts de la llista
+print (llista [1:3])  # Imprimeix els elements de la llista des de l'índex 1 fins a l'índex 2 (excloent l'índex 3)
+
+#Reassignar un valor:
+llista[2] = "gat"
+
+llista = [2,]
