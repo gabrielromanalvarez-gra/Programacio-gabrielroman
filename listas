@@ -1,17 +1,53 @@
-llista = [2, "Hola", 3.5]
-print(llista[0])  # Imprimeix el primer element de la llista
-print(llista[1])  # Imprimeix el segon element de la llista
-print(llista[2])  # Imprimeix el tercer element de la llista
+llista=[2, "hola", 3.5]
+print(llista[0])
+print(llista[1])
+print(llista[2])
 
-matriu = [[1, 1, 1], [2, 2, 2]]
+#Llista de llistes
+matriu=[[1, 11, 111], [2, 22, 222]]
+print(matriu[1][2])
+print(matriu[1])
 
-print(len(llista))  # Imprimeix la longitud de la llista
-print(len(matriu))  # Imprimeix la longitud de la matriu
+#Longitud d'una llista
+print(len(llista))
+print(len(matriu))
 
-#Parts de la llista
-print (llista [1:3])  # Imprimeix els elements de la llista des de l'índex 1 fins a l'índex 2 (excloent l'índex 3)
+#Concatenar llistes
+llista=llista+[4, 6, 9]
+print(llista)
 
-#Reassignar un valor:
-llista[2] = "gat"
+#Parts d'una llista
+print(llista[1:3])
 
-llista = [2,]
+#reassignar un valor
+llista[2]= "gat"
+print(llista)
+
+#Eleminar
+del llista[2]
+print(llista)
+
+
+llista[2]=""
+print(llista[2])
+
+
+#Programa DNI
+
+dni = input("Escriu el teu DNI complet i sense espais:")
+
+if not len(dni) == 9:
+    print("El teu DNI es incorrecte ha de tenir 9 caràcters")
+
+lletresllista= ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]
+if len(dni) == 9:
+    numero=int(dni[0:8])
+    lletra=dni[8]
+
+    if lletra == lletresllista[numero%23]:
+        print("DNI correcte")
+
+    else:
+        print("DNI incorrecte, la lletra no coincideix amb el número")
+        print("La lletra correcta hauria de ser: ", lletresllista[numero%23])
+
