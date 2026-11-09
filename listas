@@ -51,3 +51,11 @@ if len(dni) == 9:
         print("DNI incorrecte, la lletra no coincideix amb el número")
         print("La lletra correcta hauria de ser: ", lletresllista[numero%23])
 
+#Teoria. Funció APPEND
+print("La llista es:",llista)
+llista.append("gat")
+print(llista)
+
+#Funció INSERT
+llista.insert(1, "gos")
+print(llista)
