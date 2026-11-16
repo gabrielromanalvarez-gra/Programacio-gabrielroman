@@ -1,1 +1,53 @@
+noms=[]
 
+for i in range(3):
+    nom=input("Escriu un nom:")
+    noms.append(nom)
+
+print("Els noms introduïts són:", noms)
+
+for nom in noms:
+    print(nom)
+
+paraula=[1]
+
+a=0
+
+for lletra in paraula:
+    if lletra=="a":
+        a+=1
+
+print("La paraula té", a, "lletres 'a'")
+
+for i in range(17,100):
+    if(i%2==0):
+        print(i, end=" ")
+
+#comt = 0
+#for i in llista[0]:
+    if(i == a):
+        comt += 1
+#print("El primer nom de la llista és",llista[0],"i té",comt,"caràcters 'a'")
+#print("")
+
+
+# Bucle de bucle amb elements de la llista
+notes=[[6,6,7,10],[10,7,6,7,7],[5,5,10,7,10]]
+comt = 0
+for i in notes:
+    for j in i:
+        if(j == 10):
+            comt += 1
+print("Hi ha", comt, "deus (10) a la classe.")
+
+# Bucle de bucle amb indexs
+if(compt > 0):
+    print("Estan asseguts:")
+    for i in range(3):
+        for j in range(5):
+            if(notes[i][j] == 10):
+                print("En la fila",i,"columna",j)
+print("")
+
+while True:
+    print("Hola")
